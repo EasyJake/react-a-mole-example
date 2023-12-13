@@ -10,12 +10,11 @@ function MoleContainer(setScore, score){ //from instructions
         setDisplayMole(false); //from instructions
     }
 
-    const displayMoleComponent = displayMole //from instructions
-        ? <Mole handleBop={handleBop} /> //from instructions
-        : <EmptySlot />; //from instructions
+    const displayMoleComponent = displayMole ? <Mole handleBop={handleBop} /> : <EmptySlot setDisplayMole={setDisplayMole} />; //from instructions
 
+    let formattedDisplay = displayMoleComponent.map;
     return (
-        <div>
+        <div className='MoleContainer'>
             {/* <h2>MoleContainer</h2> */}
             {displayMoleComponent}
         </div>

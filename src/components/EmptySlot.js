@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import moleImg from "../mole.png"
+import moleImg from "../images/molehill.png"
 
 
 function EmptySlot(props) {
@@ -11,8 +11,8 @@ function EmptySlot(props) {
         return () => clearTimeout(timer)
     })
     return (//from instructions
-        <div>
-            <img style = {{'width': '30vw'}} 
+        <div className="emptySlot">
+            <img style = {{'width': '30%'}} 
             src={moleImg} 
             alt="mole" 
             onClick={props.handleClick}/>

@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+img{
+  width: 25%;
+}
+.MoleContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+
+}
