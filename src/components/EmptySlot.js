@@ -6,13 +6,13 @@ function EmptySlot(props) {
     useEffect(() => {
         let randSeconds = Math.ceil(Math.random() * 5000) //from instructions
         let timer = setTimeout(() => { //from instructions
-            props.setDisplayMole(false)
+            props.setDisplayMole(true)
         }, randSeconds)
         return () => clearTimeout(timer)
     })
     return (//from instructions
         <div className="emptySlot">
-            <img style = {{'width': '30%'}} 
+            <img 
             src={moleImg} 
             alt="mole" 
             onClick={props.handleClick}/>
