@@ -4,7 +4,7 @@ import moleImg from "../images/molehill.png"
 
 function EmptySlot(props) {
     useEffect(() => {
-        let randSeconds = Math.ceil(Math.random() * 5000) //from instructions
+        let randSeconds = Math.ceil(Math.random() * 19999) //from instructions
         let timer = setTimeout(() => { //from instructions
             props.setDisplayMole(true)
         }, randSeconds)
